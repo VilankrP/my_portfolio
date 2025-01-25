@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pruthvesh Vilankar - Resume Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
+      color: #eaeaea;
+    }
+
+    .profile-header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      border-bottom: 5px solid #2575fc;
+    }
+
+    .profile-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-header a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .profile-header a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      object-fit: cover;
+      border: 5px solid #ffd700;
+    }
+
+    .navbar {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    .navbar .navbar-nav .nav-link {
+      color: black
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+      color: white
+    }
+    .navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for effect */
+}
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #6a11cb;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #6a11cb;
+      padding-bottom: 0.5rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      background: #2e2e4a;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-body {
+      color: #eaeaea;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+      border-top: 5px solid #6a11cb;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* Custom card styling */
+    .custom-card {
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom card body styling */
+.custom-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures the content is aligned to the top */
+  height: 100%;
+}
+
+/* Custom card title styling */
+.custom-card-title {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 10px; /* Adds space between title and text */
+}
+.custom-card-text {
+  font-size: 1rem;
+  color: black;
+  margin-top: 0; /* Ensures no extra space above the text */
+}
+/* Ensure all cards are the same size */
+.custom-card .custom-card-body {
+  flex-grow: 1;
+  
+}
+
+/* Optional: Add consistent spacing for all cards */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-md-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pruthvesh Vilankar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="profile-header">
+    <img src="./profile.jpeg" alt="Pruthvesh Vilankar" class="profile-photo">
+    <h1>Pruthvesh Vilankar</h1>
+    <p>Navi Mumbai, India | +91-9075688955 | <a href="mailto:pruthvesh.vilankar10@gmail.com">pruthvesh.vilankar10@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/pruthvesh-vilankar-55b600210" target="_blank">LinkedIn Profile</a></p>
+  </header>
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Objective Card -->
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="section-title">Objective</h2>
+            <p>Motivated and results-driven System Engineer with hands-on experience in designing and managing data pipelines and cloud-based solutions. Currently working on advancing expertise in Azure and Python, with a focus on contributing to scalable and innovative software and data development projects. Strong problem-solving skills and technical expertise in cloud-based solutions and data management.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills and Accomplishments Card -->
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="section-title" id="skills">Skills and Accomplishments</h2>
+            <div class="col-12">
+              <div class="row">
+                <!-- Card for Programming Languages -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card programming-languages-card">
+                    <div class="custom-card-body" style="background-color: #977272;">
+                      <h5 class="custom-card-title"><strong>Programming Languages:</strong></h5>
+                      <p class="custom-card-text">JavaScript, Node.js, Python, C, SQL, HTML, AngularJS</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Technologies & Frameworks -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card technologies-card">
+                    <div class="custom-card-body" style="background-color: #837486;">
+                      <h5 class="custom-card-title"><strong>Technologies & Frameworks:</strong></h5>
+                      <p class="custom-card-text">Matillion, Qlik Replication, Hadoop, Spark, Snowflake DW, Bootstrap, Angular Studio</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Database Technologies -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card database-card">
+                    <div class="custom-card-body" style="background-color: #71816a;">
+                      <h5 class="custom-card-title"><strong>Database Technologies:</strong></h5>
+                      <p class="custom-card-text">MySQL, SQL Server, Snowflake, Hive, Sqoop, Oracle</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Cloud Platforms -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card cloud-platforms-card">
+                    <div class="custom-card-body" style="background-color: #977272;">
+                      <h5 class="custom-card-title"><strong>Cloud Platforms:</strong></h5>
+                      <p class="custom-card-text">Azure Cloud, Google Cloud Platform</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Software Development -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card software-development-card">
+                    <div class="custom-card-body" style="background-color: #837486;">
+                      <h5 class="custom-card-title"><strong>Software Development:</strong></h5>
+                      <p class="custom-card-text">Full-Stack Web Development, Microservices, API Integration</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Tools & Systems -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card tools-card">
+                    <div class="custom-card-body" style="background-color: #71816a;">
+                      <h5 class="custom-card-title"><strong>Tools & Systems:</strong></h5>
+                      <p class="custom-card-text">GitHub, UNIX, ServiceNow ITIL, Change Management, Azure Synapse, File Transfer Protocols, Data Warehouse Management</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Card for Soft Skills -->
+                <div class="col-md-4 mb-4">
+                  <div class="custom-card soft-skills-card">
+                    <div class="custom-card-body" style="background-color:#977272;">
+                      <h5 class="custom-card-title"><strong>Soft Skills:</strong></h5>
+                      <p class="custom-card-text">Analytical Thinking, Problem-Solving, Team Collaboration, Client Communication</p>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Card -->
+      <div class="col-12 col-md-6" id="experience">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="section-title">Work Experience</h2>
+      <p><strong>Tata Consultancy Services</strong> | System Engineer | 12/2021 – 10/2024</p>
+      <ul>
+        <li>Designed and optimized data pipelines using Matillion, Qlik Replication, Hadoop, Spark, and Snowflake DW.</li>
+        <li>Integrated data from diverse sources into Snowflake Data Warehouse with robust quality checks.</li>
+        <li>Presented progress and technical solutions to client managers, ensuring clear communication.</li>
+        <li>Hands-on experience with ServiceNow ITIL processes and Change Management.</li>
+      </ul>
+      <p><strong>Data Governance Team (COE):</strong> | System Engineer | 10/2024 – Present</p>
+      <ul>
+        <li>Collaborating on data quality checks and ensuring compliance standards are met while working with Azure Functions, Purview, and Databricks for streamlined data governance and processing.</li>
+        <li>Contributing to the design and implementation of scalable cloud-based data solutions, leveraging Azure Functions, Purview, and Databricks to enhance data workflows and governance frameworks.</li>
+      </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Card -->
+      <div class="col-12 col-md-6" id="projects">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+              <li><strong>Contact Book:</strong> Developed a contact management system with CRUD functionality, integrating SQL Server for secure data storage and persistence. Improved user experience with a simple, intuitive command-line interface.</li>
+              <li><strong>Guess the Number (Mini Project):</strong> Created a "Guess the Number" game featuring random number generation, user input validation, and a command-line interface.</li>
+              <li><strong>Angular + Android App Development (Ongoing Learning):</strong> Built a Android application using Angular and Android Studio as part of learning full-stack development.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6" id="certifications">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+              <li>AZ 900 Azure</li>
+              <li>Google Associate Cloud Engineer (06/2022) – Google Cloud Platform</li>
+              <li>Spring Boot Microservices (02/2022 – 03/2022) – Tata Communications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    <p>© 2025 Pruthvesh Vilankar</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
