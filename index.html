@@ -16,7 +16,7 @@
     .profile-header {
       background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-      padding: 2rem 0;
+      padding: 3rem 0;
       text-align: center;
       border-bottom: 5px solid #2575fc;
     }
@@ -35,6 +35,33 @@
     .profile-header a:hover {
       text-decoration: underline;
     }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      object-fit: cover;
+      border: 5px solid #ffd700;
+    }
+
+    .navbar {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    .navbar .navbar-nav .nav-link {
+      color: black
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+      color: white
+    }
+    .navbar.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for effect */
+}
 
     .section-title {
       font-size: 1.8rem;
@@ -81,32 +108,63 @@
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pruthvesh Vilankar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <header class="profile-header">
+    <img src="./profile.jpeg" alt="Pruthvesh Vilankar" class="profile-photo">
     <h1>Pruthvesh Vilankar</h1>
     <p>Navi Mumbai, India | +91-9075688955 | <a href="mailto:pruthvesh.vilankar10@gmail.com">pruthvesh.vilankar10@gmail.com</a></p>
     <p><a href="https://www.linkedin.com/in/pruthvesh-vilankar-55b600210" target="_blank">LinkedIn Profile</a></p>
   </header>
 
   <div class="container py-5">
+
+    <div class="row g-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="section-title">Objective</h2>
+              <p>Motivated and results-driven ETL Engineer with hands-on experience in designing and managing data pipelines and cloud-based solutions. Currently working on advancing expertise in Azure and Python, with a focus on contributing to scalable and innovative software and data development projects. Strong problem-solving skills and technical expertise in cloud-based solutions and data management.</p>
+            </div>
+          </div>
+        </div>
+
     <div class="row g-4">
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <h2 class="section-title">Objective</h2>
-            <p>Motivated and results-driven ETL Engineer with hands-on experience in designing and managing data pipelines and cloud-based solutions. Eager to transition into a software and data development and cloud role, leveraging strong problem-solving skills and technical expertise. Currently advancing knowledge in Azure and Python to contribute to scalable, innovative projects.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="section-title">Skills and Accomplishments</h2>
+            <h2 class="section-title" id="skills">Skills and Accomplishments</h2>
             <ul>
               <li><strong>Programming Languages:</strong> JavaScript, Node.js, Python, C, SQL, HTML</li>
               <li><strong>Technologies & Frameworks:</strong> Matillion, Qlik Replication, Hadoop, Spark, Snowflake DW, AngularJS, React, Node.js, Bootstrap, Angular Studio</li>
               <li><strong>Database Technologies:</strong> MySQL, SQL Server, Snowflake, Hive, Sqoop</li>
-              <li><strong>Cloud Platforms:</strong> Azure (currently learning), Google Cloud Platform (GCP)</li>
+              <li><strong>Cloud Platforms:</strong> Azure Cloud (Paas), Google Cloud Platform</li>
               <li><strong>Software Development:</strong> Full-Stack Web Development, Microservices, API Integration</li>
               <li><strong>Tools & Systems:</strong> GitHub, UNIX, ServiceNow ITIL, Change Management, File Transfer Protocols, Data Warehouse Management</li>
               <li><strong>Soft Skills:</strong> Analytical Thinking, Problem-Solving, Team Collaboration, Client Communication</li>
@@ -115,7 +173,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" id="experience">
         <div class="card">
           <div class="card-body">
             <h2 class="section-title">Work Experience</h2>
@@ -128,27 +186,28 @@
             </ul>
             <p><strong>Data Governance Team (COE):</strong>| System Engineer | 10/2024 – Present</p>
             <ul>
-              <li>Learning Azure Cloud, React, and Azure Purview to develop cloud-based data solutions and governance frameworks.</li>
-              <li>Exploring cloud technologies and best practices in data governance.</li>
+                <li>Collaborating on data quality checks and ensuring compliance standards are met while working with Azure Functions, Purview, and Databricks for streamlined data governance and processing.</li>
+                <li>Contributing to the design and implementation of scalable cloud-based data solutions, leveraging Azure Functions, Purview, and Databricks to enhance data workflows and governance frameworks.</li>
+                
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" id="projects">
         <div class="card">
           <div class="card-body">
             <h2 class="section-title">Projects</h2>
             <ul>
               <li><strong>Contact Book:</strong> Developed a contact management system with CRUD functionality using SQL Server.</li>
               <li><strong>Guess the Number:</strong> Created a command-line game featuring random number generation and validation.</li>
-              <li><strong>Angular + Android App Development:</strong> Built a simple Android app using Angular and Android Studio.</li>
+              <li><strong>Angular + Android App Development:</strong> Built a Android app using Angular and Android Studio.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" id="education">
         <div class="card">
           <div class="card-body">
             <h2 class="section-title">Education</h2>
@@ -161,12 +220,12 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" id="certifications">
         <div class="card">
           <div class="card-body">
             <h2 class="section-title">Certifications</h2>
             <ul>
-                <li>AZ-900 </li>
+              <li>AZ-900 </li>
               <li>Google Associate Cloud Engineer (06/2022)</li>
               <li>Spring Boot Microservices (02/2022 – 03/2022)</li>
             </ul>
